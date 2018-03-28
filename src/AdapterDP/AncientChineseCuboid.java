@@ -28,10 +28,10 @@ public class AncientChineseCuboid {
      */
     public Double getVolume()
     {
-        // 1 sheng = 1 liter = 1 m^3
-        // 1 chi^3 = 0.125 m^3
+        // 1 sheng = 1 liter = 1 dm^3
+        // 1 chi^3 = 0.125 m^3 = 125 dm^3
         Double volumeInChiCubed = this.lengthInChi * this.widthInChi * this.heightInChi;
-        Double volumeInShengs = volumeInChiCubed * 0.125;
+        Double volumeInShengs = volumeInChiCubed * 125;
         return volumeInShengs;
     }
 

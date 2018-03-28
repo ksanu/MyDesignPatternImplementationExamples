@@ -15,7 +15,6 @@ public class MyTestRunner {
     public static void main(String[] args) {
         Result result = JUnitCore.runClasses(VehicleUnitTests.class, VehicleUnitTestsWithSingletonDP.class,
                VehicleListUnitTests.class, CuboidAdapterUnitTests.class, MusicianUnitTests.class);
-        //Result result = JUnitCore.runClasses(CuboidAdapterUnitTests.class);
         System.out.println("UnitTests:");
         System.out.println("\tFailures:");
         for (Failure failure : result.getFailures()) {
